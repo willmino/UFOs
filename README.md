@@ -3,9 +3,9 @@
 Javscript, HTML, and CSS code to display table data and dynamic filtering of the table on an HTML webpage.
 
 ## Overview
-We were tasked with creating an HTML webpage to display UFO sighting data in an HTML data table. We constructed the HTML table using javascript code. The HTML script elements referenced the javascript app.js file and data.js file using script elements (data.js file contained a list of objects for each UFO sighting). We also created a filtered data function that relied on an event listener to detect the changes of the user inputs into table filtering criteria. The user input filter data was stored and used to extract matching data from the initial container of all data. The resulting filtered data was then displayed on the HTML webpage.
+I was tasked with creating an HTML webpage to display UFO sighting data in an HTML data table. I constructed the HTML table using javascript code. The HTML script elements referenced the javascript app.js file and data.js files (data.js file contained a list of objects for each UFO sighting). I also created a filtered data function that relied on an event listener to detect the changes of the user inputs into table filtering criteria. The user input filter data was stored and was used to extract matching data from the initial container of all data. The resulting filtered data was then displayed on the HTML webpage.
 
-## Analysis
+### Analysis
 
 ### Organization of Visual HTML Elements
 To construct the webpage in visual studio code, the basic elements of the HTML webpage were inserted by default by typing "!" and then pressing enter. 
@@ -36,11 +36,11 @@ Next, a jumbotron element was inserted beneath the navbar with the "UFO Sighting
 
 &nbsp;&nbsp;`</div>`
 
-There are CSS and bootstrap stylings referenced through the webpage. More commonly, boostrap stylings are referenced using classes such as `container-fluid`, `col-md`, and `bg-dark`. The general structure of the organization of the HTML elements on the webpage made use of the `col-md` layout which, when nested in a row element, will split the row of the webpage into twelve equal units of space. When incorporating the classes `cold-md-4` in one division with a `col-md-8` class in the other division, we allocate 4 of these columns to the first division element and 8 of these columns to the second division element. Within each of these division elements, for this example we included the header element:
+There are CSS and bootstrap stylings referenced throughout the webpage. More commonly, boostrap stylings are referenced using classes such as `container-fluid`, `col-md`, and `bg-dark`. The general structure of the organization of the HTML elements on the webpage made use of the `col-md` layout which, when nested in a row element, split the row of the webpage into twelve equal units of space. When incorporating the classes `cold-md-4` in one division with a `col-md-8` class in the other division, I allocated 4 of these columns to the first division element and 8 of these columns to the second division element. Within each of these division elements, for this example I included the header element:
 
 `<h3>UFO Sightings: Fact or Fancy? <small>Ufologists weigh in</small></h3>` 
 
-In the division with the `col-md-8` class, we included a paragraph body of text.
+In the division with the `col-md-8` class, I included a paragraph body of text.
 
 `<div class="container-fluid">`
 
@@ -50,19 +50,19 @@ In the division with the `col-md-8` class, we included a paragraph body of text.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<div class="col-md-8 article-p">`
 
-This `col-md` organization allows for the `<h3 />` section of the webpage taking up four columns (`col-md-4`), with text `UFO Sightings: Fact or Fancy? Ufologists weigh in` to appear smaller than the element next to it in the same row. This neighboring paragraph `<p />` element will take up 8 columns of space and thus appear larger since it is nested in the `div` tag with a `col-md-8` class. Notice the spacing of the visual elements on the website in the image below:
+This `col-md` organization allowed for the `<h3 />` section of the webpage taking up four columns (`col-md-4`), with text `UFO Sightings: Fact or Fancy? Ufologists weigh in` to appear smaller than the element next to it in the same row. This neighboring paragraph `<p />` element took up 8 columns of space and thus appeared larger since it was nested in the `div` tag with a `col-md-8` class. Notice the spacing of the visual elements on the website in the image below:
 
 ![h3_p_col_md](https://github.com/willmino/UFOs/blob/main/images/h3_p_col_md.png)
 
 
 
-Another use of the `col-md` organization of the webpage elements was to include the filter search criteria for user inputs in a division with a `col-md-3` class. The actual table itself was included in a division with class `col-md-9` , all within the same row element as the filter search criteria. Again, this causes the filter search criteria fields to appear smaller than the initial data table itself, since we allocated 3 columns of space to the filter criteria and 9 columns of space to the data table webpage element. An image is included below to visually demonstrate the amount of space each element with differing `col-md` classes will take up in the same row on the webpage:
+Another use of the `col-md` organization of the webpage elements was to include the filter search criteria for user inputs in a division with a `col-md-3` class. The actual table itself was included in a division with class `col-md-9` , all within the same row element as the filter search criteria. Again, this caused the filter search criteria fields to appear smaller than the initial data table itself, since I allocated 3 columns of space to the filter criteria and 9 columns of space to the data table webpage element. An image is included below to visually demonstrate the amount of space each element with differing `col-md` classes will take up in the same row on the webpage:
 
-![filter_tabledata_co-md](https://github.com/willmino/UFOs/blob/main/images/filter_tabledata_col-md.png)
+![filter_tabledata_col-md](https://github.com/willmino/UFOs/blob/main/images/filter_tabledata_col-md.png)
 
 ### Construction of the Data Table and Dynamic Filtering with Javascript
 
-In order to construct the HTML data table that featured all of our UFO sightings, we first needed to write javascript code to reference our instance of data as javascript object and iterate through each element of the table as we created it. To import the data (list of javascript objects) into the HTML code, we set the src attribute of a script element equal to the filepath of the initial data in the HTML code. We also import the javascript code into the HTML code using a script element as well. These lines of code were included at the bottom of the HTML body element. Lastly,  the D3 library was referenced as well using the src attribute linkage in another script element. The code below accomplished this:
+In order to construct the HTML data table that featured all of our UFO sightings, I first needed to write javascript code to reference our instance of data as a javascript object and iterate through each element of the table as I created it. To import the data (list of javascript objects) into the HTML code, I set the src attribute of a script element equal to the filepath of the initial data in the HTML code. I also imported the javascript code into the HTML code using a script element as well. These lines of code were included at the bottom of the HTML body element. Lastly, the D3 library was referenced as well using the src attribute linkage in another script element. The code below accomplished this:
 
 `<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>`
 
@@ -76,7 +76,7 @@ Once all of the appropriate javascript files were linked to the HTML code, I beg
 
 I used the d3 library to select the `tbody` table body element where I appended each table division element. 
 
-This allowed for the beginning of the table construction. To construct the table, I began constructing the function `buildTable(data)`. I first declared this function and inside `{}` of the function I set the `html` attribute of the `tbody` elemenet equal to an empty string, to initialize an empty table everytime the webpage is loaded. This clears prefiltered data so taht when a user begins entering new filter information, their filtered results would not be determined by previous instances of filtering the table. Then, I iterated through the `data` list of javascript objects using a `forEach` function. I created the variable `dataRow` and passed it through this `forEach` function. An arrow function was implemented inside the `forEach` function and this new function would set the variable `row` equal to the act of appending a `tr` table row element to the `tbody` element, for every `tableRow` iteration variable which represented each object in the list of objects. Then, another `forEach` function was implemented to add a `td` element to each table row element. This would serve to create all of the columns within each row of the table. To iterate through each object in the list of objects and append `td` elements to each `tr` I needed to use the `Object` datatype and chain the `values()` function to it. By doing so, I allowed the `dataRow` variable to now represent each iterable object in the list of objects. The second `forEach` function could now iterate with the `val` variable. The purpose of this was to create code to finally implement the act of appending a `td` element to each `tr` element. Declaring the `cell` variable equal to `row.append('td')` allowed for this. Finally, the `cell.text(val)` line of code drilled down into the HTML element for each cell of the table we created and set the `text` attribute equal to the `val` variable. The `val` variable represented each actual data value from each set of `[key, value]` pairs within each object that was a part of our list of objects. This was performed so that we could fill our data table with the values from each object, value by value, for each row of data. Alas, the HTML table was created using javascript.
+This allowed for the beginning of the table construction. To construct the table, I began constructing the function `buildTable(data)`. I first declared this function and inside the `{}` of the function I set the `html` attribute of the `tbody` element equal to an empty string, to initialize an empty table everytime the webpage was loaded. This cleared prefiltered data so that when a user began entering new filter information, their filtered results would not be determined by previous instances of filtering the table. Then, I iterated through the `data` list of javascript objects using a `forEach` function. I created the variable `dataRow` and passed it through this `forEach` function. An arrow function was implemented inside the `forEach` function and this new function would set the variable `row` equal to the act of appending a `tr` table row element to the `tbody` element, for every `tableRow` iteration variable which represented each object in the list of objects. Then, another `forEach` function was implemented to add a `td` element to each table row element. This would serve to create all of the columns within each row of the table. To iterate through each object in the list of objects and append `td` elements to each `tr` I needed to use the `Object` datatype and chain the `values()` function to it. By doing so, I allowed the `dataRow` variable to now represent each iterable object in the list of objects. The second `forEach` function could now iterate with the `val` variable. The purpose of this was to create code to finally implement the act of appending a `td` element to each `tr` element. Declaring the `cell` variable equal to `row.append('td')` allowed for this. Finally, the `cell.text(val)` line of code drilled down into the HTML element for each cell of the table I created and set the `text` attribute equal to the `val` variable. The `val` variable represented each actual data value from each set of `[key, value]` pairs within each object that was a part of our list of objects. This was performed so that I could fill our data table with the values from each object, value by value, for each row of data. Alas, the HTML table was created using javascript.
 
 `function buildTable(data) {`
 
@@ -98,13 +98,13 @@ This allowed for the beginning of the table construction. To construct the table
 
 At this point the website displayed all of the HTML elements required and the filtering parameters for each table and the table itself. Now, I needed to create the dynamic table filtering experience for the user.
 
-To accomplish this, I first declared the variable `filters` and set it equal to an empty object to hold all of the user input filters. The filters from the users would exist as keys. The keys and values in the raw data set that matched with the user input keys would be filtered, eliminating all remaining data that did not match the user criteria.
+To accomplish this, I first declared the variable `filters` and set it equal to an empty object to hold all of the user input filters. The filters from the users would exist as keys. The keys and values in the raw data set that matched with the user input keys would be retained (filtered), eliminating all remaining data that did not match the user criteria.
 I needed to establish javascript code that would store the user input filters in a variable that could later be used to actually filter the table.
 
 To store the updated filters, I declared the `updateFilters()` function. Inside this function, i set the `changedElement` variable equal to the `D3` library selecting `this`.  The `this` object in javascript represents the current object that is executing the current piece of code. In this case, D3 will select the HTML element that the user is changing when they input information into a field for filtering the table. At this moment of changing the HTML code, I created the variable `elementValue` to store the value of the changed element. I then created the variable `filterId` to store the `id` of the `changedElement`. Then, an if else statement was executed. Whenever a `changedElement` occurred, the script would store the `[key, value]` pair, key representing the`filterId` and value representing the `elementValue`, as a new entry in the `filters` object I created earlier. Each object entry was stored by the line of code: `filters[filterId] = elementValue;`. 
-If `changedElement` was not entered, I then set the `else` parameter of this function to delete that `filterId` from the `filters` object. This was necessary because if a user type something into the field but did not press enter, then the should not respond to this change in the field. This is because changing the filter criteria and actually pressing enter is act of filtering that we want the D3 library to listen to.
+If `changedElement` was not entered, I then set the `else` parameter of this function to delete that `filterId` from the `filters` object. This was necessary because if a user typed something into the field but did not press enter, then the script should not respond to this change in the field. This is because changing the filter criteria and actually pressing enter is the act of filtering that I wanted the D3 library to listen to.
 
-Finally, at the end of the `updateFilters` function, the `filterTable()` function was included so that the code could execute and take the new user input information as filters and apply those filters to the table.
+Finally, at the end of the `updateFilters` function, the `filterTable()` function was called so that the code could execute and take the new user input information as filters and apply those filters to the table.
 
 
 `function updateFilters() {`
@@ -135,9 +135,9 @@ Finally, at the end of the `updateFilters` function, the `filterTable()` functio
   
 &nbsp;&nbsp;&nbsp;`}`
 
-Lastly, to allow for the `filterTable()` function to be executed, we needed to declare this function. Within this function, I declared a new variable `filteredData` and set it equal to the variable `tableData`. This variale was created because we now wanted to iterate through every object of data from the `data.js` file and only store the entries in this list of objects (only store the UFO sightings) that the user had input on the website. To iterate through each entry, a `for of` loop was executed. This `for of` loop declared the new iteration variable `[key, value]` which would iterate through all of the object entries in the new `filters` variable. Now, the code would look at every entry in the `filters` variable and check to see if it matched with the object instances representing the entries in the `data.js` file (all of the raw data). To spefically match the keys and values from the `data.js` file, the code set the variable `filteredData` equal to `filteredData.filter(function(row) {return row[key] ===value;})`. This was the actual javascript act of filtering the whole raw dataset and only returning the key value pairs (object entries) that matched the exact user input. Only exact matches were returned because the `===` javascript strict equality operator was used. An anonymous function was declared within the `filter()` function and assigned the new variable `row` to pass through the function and represent the raw data `[key, value]` pairs which we were looking for that served as exact matches to the object entries in the user-input`filters` variable. To finish this `filterTable()` function the `buildTable(filteredData)` line was executed to build the filtered data table that resulted from the user input on the website. 
+Lastly, to allow for the `filterTable()` function to be executed, I needed to declare this function. Within this function, I declared a new variable `filteredData` and set it equal to the variable `tableData`. This variable was created because I now needed to iterate through every object of data from the `data.js` file and only store the entries in this list of objects (only store the UFO sightings) that the user had input on the website. To iterate through each entry, a `for of` loop was executed. This `for of` loop declared the new iteration variable `[key, value]` which would iterate through all of the object entries in the new `filters` variable. Now, the code would look at every entry in the `filters` variable and check to see if it matched with the object instances representing the entries in the `data.js` file (all of the raw data). To spefically match the keys and values from the `data.js` file, the code set the variable `filteredData` equal to `filteredData.filter(function(row) {return row[key] ===value;})`. This was the actual javascript act of filtering the whole raw dataset and only returning the key value pairs (object entries) that matched the exact user input. Only exact matches were returned because the `===` javascript strict equality operator was used. An anonymous function was declared within the `filter()` function and assigned the new variable `row` to pass through the function and represent the raw data (`data.js file`) `[key, value]` pairs which I was looking for that served as exact matches to the object entries in the user-input`filters` variable. To finish this `filterTable()` function the `buildTable(filteredData)` line was executed to build the filtered data table that resulted from the user input on the website. 
 
-Two major elements remained at the very end of the entire javascript code.The D3 `selectAll()` code listened for all `"change"` events commited by the user on the website which occurred in any HTML `"input"` elements. These elements were only nested in our filters on the website, so it ensured that we were only listening to the user typing into the filters, and nothing else. The below line of code accomplished this:
+Two major elements remained at the very end of the entire javascript code. The D3 `selectAll()` code listened for all `"change"` events commited by the user on the website which occurred in any HTML `"input"` elements. These elements were only associated with the filters on the website, so it ensured that D3 was only listening to the user typing into the filters, and nothing else. The below line of code accomplished this:
 
 `d3.selectAll("input").on("change", updateFilters);`
 
@@ -145,7 +145,7 @@ Finally, the `buildTable(tableData);` line of code was executed to build the unf
 
 
 
-### Results
+## Results
 
 To perform a search on this webpage, a user must enter information into one of the search fields. Below is an image of the filters on the website. Upon their initial visit, a user is recommended to observe the exact text of the input fields in the unfiltered data table. If they want to perform a successful search they must enter matching text criteria in the correct format in any of the search criteria fields.
 
@@ -169,15 +169,15 @@ Below is an example of a successful search performed by a user because they ente
 
 ![correct_date_format](https://github.com/willmino/UFOs/blob/main/images/correct_format_search.png)
 
-### Summary
+## Summary
 
-The website was successfully constructed. The `app.js` javascript file was linked in the website's HTML code. This file contained all of the javascript code necessary to generate the table we needed and display the UFO Sighting data in this table. The `data.js` source file containing a list of objects was successfully input into the HTML code of the data table on the UFO website.
+The website was successfully constructed. The `app.js` javascript file was linked in the website's HTML code. This file contained all of the javascript code necessary to generate the table I needed and display the UFO Sighting data in this table. The `data.js` source file containing a list of objects was successfully input into the HTML code of the data table on the UFO website.
 
-#### One Drawback:
+### One Drawback:
 
 One thing to note about website functionality was the way the filters appeared in relation to the description text next to each filter. Since each description of the filter had a different text length, the filters appeared offset from eachother. This was not visually appealing for the website.
 
-#### Additional Recommendations for Further Development
+### Additional Recommendations for Further Development
 
 1. One change I already implemented for this website was to create subcolumns of space using the `col-md` layout to set an equal space to store both the description of the data table filters and the filter entry fields themselves. In this way, the appearance of the filters would be clean and more visually appealing to users.
 
