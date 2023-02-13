@@ -151,7 +151,7 @@ To perform a search on this webpage, a user must enter information into one of t
 
 ![filters](https://github.com/willmino/UFOs/blob/main/images/all_filters.png)
 
-For example, if a user wants to find all of the UFO Sightings listed on the website that occurred in the city of El Cajon, CA, they must enter "el cajon" into the "Enter City" filter field. Below is an image which shows the correct input into the city filter field.
+For example, if a user wants to find all of the UFO Sightings listed on the website that occurred in the city of El Cajon, CA, they must enter "el cajon" (all lowercase) into the "Enter City" filter field. Below is an image which shows the correct input into the city filter field.
 
 ![filter_example](https://github.com/willmino/UFOs/blob/main/images/filter_input.png).
 
@@ -159,7 +159,7 @@ This specific search will yield the resulting UFO Sightings:
 
 ![el_cajon_ufo_sightings](https://github.com/willmino/UFOs/blob/main/images/el_cajon_search_results.png)
 
-If a user wants to find all of the UFO Sightings that occurred on a specific data like 1/1/2010 (a very active UFO day), the user must enter the exact data as the string `1/1/2010`. Otherwise, the wrong date will appear in the returned results, or no UFO Sightings may be returned if the wrong format is input for the date. For example, if a user enters `1-1-2010` into the field, the website will yield zero UFO Sighting search results.
+If a user wants to find all of the UFO Sightings that occurred on a specific date like 1/1/2010 (a very active UFO day), the user must enter the exact date as the string `1/1/2010`. Otherwise, the wrong date will appear in the returned results, or no UFO Sightings may be returned if the wrong format is input for the date. For example, if a user enters `1-1-2010` into the field, the website will yield zero UFO Sighting search results.
 
 Below is an example of the wrong input a user submitted for the "Enter Date" filter criteria. Notice that zero UFO Sightings were returned because the user used dash `-` characters instead of slash `/` characters in their search query.
 
@@ -168,6 +168,8 @@ Below is an example of the wrong input a user submitted for the "Enter Date" fil
 Below is an example of a successful search performed by a user because they entered the correct date format. Notice that many search results were returned. This user has plenty of information to start fortifying their conspiracy theories regarding the infamous UFO day `1/10/2010`!
 
 ![correct_date_format](https://github.com/willmino/UFOs/blob/main/images/correct_format_search.png)
+
+A correct user search will cause the javascript code to capture the user information and apply that information to modify the data that is displayed. The returned search results will correspond with the exact information input by the user. This is why we see specific dates returned for UFO Sightings if a user inputs a specific date in the "Enter Date" search query field on the website. Notice that a user can also provide multiple inputs and return an even stricter query for search results!
 
 ## Summary
 
@@ -191,9 +193,4 @@ Below is a visualization of the cleaner appearance of the filters on the website
 
 ![clean_filters](https://github.com/willmino/UFOs/blob/main/images/clean_filters.png)
 
-2. A second change I would implement to further develop this website would be to modify the HTML code so that 
-
-
-
-
-
+2. A second change I would implement to further develop this website would be to modify the `data.js` file and implement a code to capitalize the first letter of every lowercase string for the city, state, country, and shape object entry values. Then, when all of the data would be loaded into the table having the first letters capitalized, it would be more visually appealing for the viewers of the website.
