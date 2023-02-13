@@ -50,9 +50,9 @@ In the division with the `col-md-8` class, we included a paragraph body of text.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<div class="col-md-8 article-p">`
 
-This `col-md` organization allows for the section of the webpage taking up four columns (`col-md-4`) to appear smaller than the element next to it in the same row. This neighboring element will take up 8 columns of space and thus appear larger. Notice the spacing of the visual elements on the website in the image below:
+This `col-md` organization allows for the section of the webpage taking up four columns (`col-md-4`) to appear smaller than the element next to it in the same row. The neighboring paragraph `<p />` element will take up 8 columns of space and thus appear larger since it is nested in the `div` tag with a `col-md-8` class. Notice the spacing of the visual elements on the website in the image below:
 
-
+![h3_p_col_md](https://github.com/willmino/UFOs/blob/main/images/h3_p_col_md.png)
 
 
 
