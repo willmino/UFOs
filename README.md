@@ -160,9 +160,21 @@ Below is an example of the wrong input a user submitted for the "Enter Date" fil
 
 ![wrong_date_format](https://github.com/willmino/UFOs/blob/main/images/wrong_format_search.png)
 
-Below is an example of a successful search performed by a user because they entered the correct date format. Notice that many search results returned. This user has plent of information to start fortifying their conspiract theories regarding the infamous UFO day `1/10/2010`!
+Below is an example of a successful search performed by a user because they entered the correct date format. Notice that many search results were returned. This user has plenty of information to start fortifying their conspiracy theories regarding the infamous UFO day `1/10/2010`!
 
 ![correct_date_format](https://github.com/willmino/UFOs/blob/main/images/correct_format_search.png)
+
+### Summary
+
+The website was successfully constructed. The `app.js` javascript file was linked in the website's HTML code. This file contained all of the javascript code necessary to generate the table we needed and display the UFO Sighting data in this table. The `data.js` source file containing a list of objects was successfully input into the HTML code of the data table on the UFO website.
+
+One thing to note about website functionality was the way the filters appeared in relation to the description text next to each filter. Since each description of the filter had a different text length, the filters appeared offset from eachother. This was not visually appealing for the website. One change I would later implement for this website would be to create subcolumns of space using the `col-md` layout to set an equal space to store both the description of the data table filters and the filter entry fields themselves. In this way, the appearance of the filters would be clean and more visually appealing to users.
+
+Here's a look at the first instance of the filter description next to each filter input field:
+
+![filters_offeset](https://github.com/willmino/UFOs/blob/main/images/all_filters.png)
+
+I changed the appearance of the input filters section by creating a `<div class="row" />` element that wrapped around each `<li />` within the `<ul />` element that contained all of the search filters and their descriptions. Since each filter and description was now contained in its own `<div class="row">` element, I could use the `col-md` grid system from Bootstrap to separate each element from each other by equal lenth. Within every `<li />` element representing each filter, I wrapped each `<label />` element in a `<div class="col-md-7">` element and I wrapped each `<input />` element in a `<div class="col-md-5">` element. In this way, the text filter description text appeared above each filter instead of to the left of each filter. This allowed for a cleaner look for the filter input on the website. In incorporated this change into the final display for this website.
 
 
 

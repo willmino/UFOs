@@ -61,25 +61,56 @@
             <form class="bg-dark">
               <p>Filter Search</p>
               <ul class="list-group">
-                <li class="list-group-item bg-dark">
-                  <label for="datetime">Enter Date</label>
-                  <input type="text" placeholder="1/10/2010" id="datetime" />
+                <!-- Delete row elements and col-md class containing elements to go back to normal-->
+                <div class="row">
+                  <li class="list-group-item bg-dark">
+                    <div class="col-md-7">
+                      <label for="datetime">Enter Date</label>
+                    </div>
+                    <div class="col-md-5">
+                      <input type="text" placeholder="1/10/2010" id="datetime" />
+                    </div>
+                  </li>
+                </div>
+                <div class="row">
+                  <li class="list-group-item bg-dark">
+                    <div class="col-md-7">
+                      <label for="city">Enter City</label>
+                  </div>
+                    <div class="col-md-5">
+                      <input type="text" placeholder="sacramento" id="city" />
+                    </div>
+                  </div>
                 </li>
-                <li class="list-group-item bg-dark">
-                  <label for="city">Enter City</label>
-                  <input type="text" placeholder="sacramento" id="city" />
+                <div class="row">
+                  <li class="list-group-item bg-dark">
+                    <div class="col-md-7">
+                      <label for="state">Enter State</label>
+                  </div>
+                    <div class="col-md-5">
+                    <input type="text" placeholder="ca" id="state" />
+                  </div>
+                  </div>
                 </li>
-                <li class="list-group-item bg-dark">
-                  <label for="state">Enter State</label>
-                  <input type="text" placeholder="ca" id="state" />
+                <div class="row">
+                  <li class="list-group-item bg-dark">
+                    <div class="col-md-7">
+                      <label for="country">Enter Country</label>
+                  </div>
+                    <div class="col-md-5">
+                    <input type="text" placeholder="us" id="country" />
+                  </div>
+                  </div>
                 </li>
-                <li class="list-group-item bg-dark">
-                  <label for="country">Enter Country</label>
-                  <input type="text" placeholder="us" id="country" />
-                </li>
-                <li class="list-group-item bg-dark">
-                  <label for="shape">Enter Shape</label>
-                  <input type="text" placeholder="circle" id="shape" />
+                <div class="row">
+                  <li class="list-group-item bg-dark">
+                    <div class="col-md-7">
+                    <label for="shape">Enter Shape</label>
+                  </div>
+                    <div class="col-md-5">
+                    <input type="text" placeholder="circle" id="shape" />
+                  </div>
+                  </div>
                 </li>
               </ul>
             </form>
