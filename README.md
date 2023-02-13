@@ -154,7 +154,7 @@ This specific search will yield the resulting UFO Sightings:
 
 ![el_cajon_ufo_sightings](https://github.com/willmino/UFOs/blob/main/images/el_cajon_search_results.png)
 
-If a user wants to find all of the UFO Sightings that occurred on a specific data like 1/1/2010 (a very active UFO day), the user must enter the exact data as the string `1/1/2010`. Otherwise, the wrong data will appear in the returned results, or no UFO Sightings may be returned if the wrong format is input for the date. For example, if a user enters `1-1-2010` into the field, the website will yield zero UFO Sighting search results.
+If a user wants to find all of the UFO Sightings that occurred on a specific data like 1/1/2010 (a very active UFO day), the user must enter the exact data as the string `1/1/2010`. Otherwise, the wrong date will appear in the returned results, or no UFO Sightings may be returned if the wrong format is input for the date. For example, if a user enters `1-1-2010` into the field, the website will yield zero UFO Sighting search results.
 
 Here is an example of the wrong input a user submitted for the "Enter Date" filter criteria:
 
