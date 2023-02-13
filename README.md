@@ -152,6 +152,6 @@ For example, if a user wants to find all of the UFO Sightings listed on the webs
 
 This specific search will yield the resulting UFO Sightings:
 
-
+![el_cajon_ufo_sightings](https://github.com/willmino/UFOs/blob/main/images/el_cajon_search_results.png)
 
 
