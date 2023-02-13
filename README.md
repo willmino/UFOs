@@ -142,7 +142,7 @@ Finally, the `buildTable(tableData);` line of code was executed to build the unf
 
 ### Results
 
-To perform a search on this webpage, a user must enter information into one of the search fields. Below is an image of the filters on the website. A user is recommended to observe the exact text of the input fields. If they want to perform a successful search they must enter matching text criteria, in the correct format, in any of the search criteria fields.
+To perform a search on this webpage, a user must enter information into one of the search fields. Below is an image of the filters on the website. Upon their initial visit, a user is recommended to observe the exact text of the input fields in the unfiltered data table. If they want to perform a successful search they must enter matching text criteria in the correct format in any of the search criteria fields.
 
 ![filters](https://github.com/willmino/UFOs/blob/main/images/all_filters.png)
 
@@ -153,5 +153,9 @@ For example, if a user wants to find all of the UFO Sightings listed on the webs
 This specific search will yield the resulting UFO Sightings:
 
 ![el_cajon_ufo_sightings](https://github.com/willmino/UFOs/blob/main/images/el_cajon_search_results.png)
+
+If a user wants to find all of the UFO Sightings that occurred on a specific data like 1/1/2010 (a very active UFO day), the user must enter the exact data as the string `1/1/2010`. Otherwise, the wrong data will appear in the returned results, or no UFO Sightings may be returned if the wrong format is input for the date. For example, if a user enters `1-1-2010` into the field, the website will yield zero UFO Sighting search results.
+
+
 
 
