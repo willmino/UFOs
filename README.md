@@ -50,14 +50,15 @@ In the division with the `col-md-8` class, we included a paragraph body of text.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<div class="col-md-8 article-p">`
 
-This `col-md` organization allows for the section of the webpage taking up four columns (`col-md-4`) to appear smaller than the element next to it in the same row. The neighboring paragraph `<p />` element will take up 8 columns of space and thus appear larger since it is nested in the `div` tag with a `col-md-8` class. Notice the spacing of the visual elements on the website in the image below:
+This `col-md` organization allows for the `<h3 />` section of the webpage taking up four columns (`col-md-4`), with text `UFO Sightings: Fact or Fancy? Ufologists weigh in` to appear smaller than the element next to it in the same row. This neighboring paragraph `<p />` element will take up 8 columns of space and thus appear larger since it is nested in the `div` tag with a `col-md-8` class. Notice the spacing of the visual elements on the website in the image below:
 
 ![h3_p_col_md](https://github.com/willmino/UFOs/blob/main/images/h3_p_col_md.png)
 
 
 
-Another use of the `col-md` organization of the webpage elements was to include the filter search criteria for user inputs in a division with a `col-md-3` class. The actual table itself was included in a division with class `col-md-9` , all within the same row element as the filter search criteria. Again, this causes the filter search criteria fields to appear smaller than the initial data table itseld, since we allocated 3 columns of space to the filter criteria and 9 columns of space to the data table webpage element.
-This was the essentially the organization of all the visual elements on the website.
+Another use of the `col-md` organization of the webpage elements was to include the filter search criteria for user inputs in a division with a `col-md-3` class. The actual table itself was included in a division with class `col-md-9` , all within the same row element as the filter search criteria. Again, this causes the filter search criteria fields to appear smaller than the initial data table itseld, since we allocated 3 columns of space to the filter criteria and 9 columns of space to the data table webpage element. An image is included below to visually demonstrate the amount of space each element with differing `col-md` classes will take up in the same row on the webpage:
+
+![](https://github.com/willmino/UFOs/blob/main/images/filter_tabledata_col-md.png)
 
 ### Construction of the Data Table and Dynamic Filtering with Javascript
 
