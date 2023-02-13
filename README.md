@@ -156,6 +156,15 @@ This specific search will yield the resulting UFO Sightings:
 
 If a user wants to find all of the UFO Sightings that occurred on a specific data like 1/1/2010 (a very active UFO day), the user must enter the exact data as the string `1/1/2010`. Otherwise, the wrong data will appear in the returned results, or no UFO Sightings may be returned if the wrong format is input for the date. For example, if a user enters `1-1-2010` into the field, the website will yield zero UFO Sighting search results.
 
+Here is an example of the wrong input a user submitted for the "Enter Date" filter criteria:
+
+![wrong_date_format](https://github.com/willmino/UFOs/blob/main/images/wrong_format_search.png)
+
+Below is an example of a successful search performed by a user because they entered the correct date format:
+
+![correct_date_format](https://github.com/willmino/UFOs/blob/main/images/correct_format_search.png)
+
+
 
 
 
