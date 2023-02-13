@@ -56,9 +56,9 @@ This `col-md` organization allows for the `<h3 />` section of the webpage taking
 
 
 
-Another use of the `col-md` organization of the webpage elements was to include the filter search criteria for user inputs in a division with a `col-md-3` class. The actual table itself was included in a division with class `col-md-9` , all within the same row element as the filter search criteria. Again, this causes the filter search criteria fields to appear smaller than the initial data table itseld, since we allocated 3 columns of space to the filter criteria and 9 columns of space to the data table webpage element. An image is included below to visually demonstrate the amount of space each element with differing `col-md` classes will take up in the same row on the webpage:
+Another use of the `col-md` organization of the webpage elements was to include the filter search criteria for user inputs in a division with a `col-md-3` class. The actual table itself was included in a division with class `col-md-9` , all within the same row element as the filter search criteria. Again, this causes the filter search criteria fields to appear smaller than the initial data table itself, since we allocated 3 columns of space to the filter criteria and 9 columns of space to the data table webpage element. An image is included below to visually demonstrate the amount of space each element with differing `col-md` classes will take up in the same row on the webpage:
 
-![](https://github.com/willmino/UFOs/blob/main/images/filter_tabledata_col-md.png)
+![filter_tabledata_co-md](https://github.com/willmino/UFOs/blob/main/images/filter_tabledata_col-md.png)
 
 ### Construction of the Data Table and Dynamic Filtering with Javascript
 
