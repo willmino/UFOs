@@ -144,5 +144,8 @@ Finally, the `buildTable(tableData);` line of code was executed to build the unf
 
 To perform a search on this webpage, a user must enter information into one of the search fields.
 
+![filters](https://github.com/willmino/UFOs/blob/main/images/all_filters.png)
+
+![filter_example](https://github.com/willmino/UFOs/blob/main/images/filter_input.png)
 
 
