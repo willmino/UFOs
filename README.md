@@ -142,10 +142,16 @@ Finally, the `buildTable(tableData);` line of code was executed to build the unf
 
 ### Results
 
-To perform a search on this webpage, a user must enter information into one of the search fields.
+To perform a search on this webpage, a user must enter information into one of the search fields. Below is an image of the filters on the website. A user is recommended to observe the exact text of the input fields. If they want to perform a successful search they must enter matching text criteria, in the correct format, in any of the search criteria fields.
 
 ![filters](https://github.com/willmino/UFOs/blob/main/images/all_filters.png)
 
-![filter_example](https://github.com/willmino/UFOs/blob/main/images/filter_input.png)
+For example, if a user wants to find all of the UFO Sightings listed on the website that occurred in the city of El Cajon, CA, they must enter "el cajon" into the "Enter City" filter field. Below is an image which shows the correct input into the city filter field.
+
+![filter_example](https://github.com/willmino/UFOs/blob/main/images/filter_input.png).
+
+This specific search will yield the resulting UFO Sightings:
+
+
 
 
